@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Farid Azar | Consulting & Advisory</title>
+  <meta name="description" content="Professional consulting and advisory services for individuals and corporations." />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: Arial, Helvetica, sans-serif; color: #1f2937; background: #f8fafc; line-height: 1.6; }
+    header { background: #0f172a; color: white; padding: 22px 8%; display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; }
+    .logo { font-size: 22px; font-weight: bold; }
+    nav a { color: white; text-decoration: none; margin-left: 18px; font-size: 15px; opacity: 0.9; }
+    .hero { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 40px; padding: 75px 8%; background: linear-gradient(135deg, #0f172a, #1e3a8a); color: white; align-items: center; }
+    .hero h1 { font-size: clamp(38px, 6vw, 64px); line-height: 1.05; margin-bottom: 22px; }
+    .hero p { font-size: 20px; max-width: 680px; opacity: 0.95; margin-bottom: 30px; }
+    .buttons { display: flex; gap: 14px; flex-wrap: wrap; }
+    .button { display: inline-block; padding: 13px 20px; border-radius: 8px; text-decoration: none; font-weight: bold; background: white; color: #0f172a; }
+    .button.secondary { background: transparent; color: white; border: 1px solid rgba(255,255,255,0.7); }
+    .profile-card { background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.25); border-radius: 24px; padding: 24px; }
+    .profile-card img { width: 100%; border-radius: 18px; display: block; aspect-ratio: 4 / 5; object-fit: cover; background: rgba(255,255,255,0.2); }
+    section { padding: 70px 8%; }
+    .section-title { font-size: 34px; margin-bottom: 14px; color: #0f172a; }
+    .section-intro { max-width: 760px; color: #475569; margin-bottom: 32px; font-size: 18px; }
+    .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+    .card { background: white; border-radius: 18px; padding: 28px; box-shadow: 0 14px 35px rgba(15, 23, 42, 0.08); border: 1px solid #e5e7eb; }
+    .card h3 { color: #0f172a; margin-bottom: 12px; font-size: 21px; }
+    .image-band { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 28px; }
+    .image-band img { width: 100%; height: 230px; object-fit: cover; border-radius: 18px; box-shadow: 0 12px 28px rgba(15, 23, 42, 0.12); }
+    .about { background: white; display: grid; grid-template-columns: 0.8fr 1.2fr; gap: 34px; align-items: center; }
+    .about img { width: 100%; border-radius: 22px; object-fit: cover; min-height: 360px; box-shadow: 0 14px 35px rgba(15, 23, 42, 0.12); }
+    .contact { background: #0f172a; color: white; text-align: center; }
+    .contact .section-title { color: white; }
+    .contact p { color: #cbd5e1; max-width: 700px; margin: 0 auto 26px; font-size: 18px; }
+    footer { padding: 24px 8%; text-align: center; background: #020617; color: #cbd5e1; font-size: 14px; }
+    @media (max-width: 800px) {
+      .hero, .about { grid-template-columns: 1fr; }
+      .cards, .image-band { grid-template-columns: 1fr; }
+      nav a { margin-left: 0; margin-right: 14px; }
+      section, .hero, header { padding-left: 6%; padding-right: 6%; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Farid Azar</div>
+    <nav><a href="#services">Services</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div>
+        <h1>Consulting & Advisory Services</h1>
+        <p>Professional services for individuals and corporations, focused on practical guidance, clear strategy, and trusted advisory support.</p>
+        <div class="buttons">
+          <a class="button" href="mailto:farid@faridazar.com">Contact Farid</a>
+          <a class="button secondary" href="https://www.linkedin.com/feed/" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+      <div class="profile-card">
+        <img src="images/farid-photo.svg" alt="Farid Azar" />
+      </div>
+    </section>
+
+    <section id="services">
+      <h2 class="section-title">How I Can Help</h2>
+      <p class="section-intro">I support clients with consulting and advisory services tailored to their personal or business goals.</p>
+      <div class="cards">
+        <div class="card"><h3>Business Advisory</h3><p>Support for planning, decision-making, growth, and operational improvement.</p></div>
+        <div class="card"><h3>Professional Consulting</h3><p>Clear, practical advice for individuals and corporations seeking trusted guidance.</p></div>
+        <div class="card"><h3>Strategy & Execution</h3><p>Helping turn ideas and priorities into practical steps, plans, and outcomes.</p></div>
+      </div>
+      <div class="image-band">
+        <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=900&q=80" alt="Professional meeting" />
+        <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=900&q=80" alt="Business discussion" />
+        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=900&q=80" alt="Team strategy session" />
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=900&q=80" alt="Professional workspace" />
+      <div>
+        <h2 class="section-title">About Farid</h2>
+        <p class="section-intro">Farid Azar provides professional consulting and advisory services for individuals and corporations. His approach is practical, thoughtful, and focused on helping clients move forward with confidence.</p>
+        <p>Whether you need guidance on a business decision, support with planning, or an experienced advisory perspective, Farid offers a professional and straightforward approach.</p>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2 class="section-title">Let's Connect</h2>
+      <p>For consulting or advisory inquiries, contact me directly by email.</p>
+      <a class="button" href="mailto:farid@faridazar.com">farid@faridazar.com</a>
+    </section>
+  </main>
+  <footer>© 2026 Farid Azar. All rights reserved.</footer>
+</body>
+</html>
